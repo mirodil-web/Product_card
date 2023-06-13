@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+      <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body>
+<div class="container mx-auto px-5 ">
+    
+                             <h1 class="text-[35px] text-center mb-10">Product Card</h1>
+</div>
+
+    <div class="container mx-auto  flex justify-around mb-5">
+
+        <div id="hi" class="border p-5 bg-yellow-200 max-w-xs rounded-lg w-full relative ">
+            <!-- narx -->
+            <p class="absolute right-5 top-3">Narxi: <span id="price">0</span> so'm</p>
+            <!-- mahsulot nomi -->
+            <h3 class="font-bold text-lg mb-3">Kartoshka</h3>
+            <!-- soni -->
+            <div class="space-x-3 mb-5">
+                <span>Soni:</span>
+                <button id="increase" class="px-2 pb-1 bg-red-400">-</button>  
+                <span id="count" class="font-bold">0</span>
+                <button id="decrease" class="px-2 pb-1 bg-green-500">+</button>
+            </div>
+            <p>Narxi: 2000 so'm</p>
+            <!-- delete btn -->
+            <div class="flex justify-end">
+                <button id="del-btn" class="bg-red-500 text-white px-6 py-1">Delete</button>
+            </div>
+        </div>
+
+        <!-- 2 -->
+        <div id="hi2" class="border p-5 bg-yellow-200 max-w-xs rounded-lg w-full relative ">
+            <!-- narx -->
+            <p class="absolute right-5 top-3">Narxi: <span id="price2">0</span> so'm</p>
+            <!-- mahsulot nomi -->
+            <h3 class="font-bold text-lg mb-3">Sabzi</h3>
+            <!-- soni -->
+            <div class="space-x-3 mb-5">
+                <span>Soni:</span>
+                <button id="increase2" class="px-2 pb-1 bg-red-400">-</button>  
+                <span id="count2" class="font-bold">0</span>
+                <button id="decrease2" class="px-2 pb-1 bg-green-500">+</button>
+            </div>
+            <p>Narxi: 2000 so'm</p>
+            <!-- delete btn -->
+            <div class="flex justify-end">
+                <button id="del-btn2" class="bg-red-500 text-white px-6 py-1">Delete</button>
+            </div>
+        </div>
+
+        <!-- 3 -->
+        <div id="hi3" class="border p-5 bg-yellow-200 max-w-xs  rounded-lg w-full relative ">
+            <!-- narx -->
+            <p class="absolute right-5 top-3">Narxi: <span id="price3">0</span> so'm</p>
+            <!-- mahsulot nomi -->
+            <h3 class="font-bold text-lg mb-3">Piyoz</h3>
+            <!-- soni -->
+            <div class="space-x-3 mb-5">
+                <span>Soni:</span>
+                <button id="increase3" class="px-2 pb-1 bg-red-400">-</button>  
+                <span id="count3" class="font-bold">0</span>
+                <button id="decrease3" class="px-2 pb-1 bg-green-500">+</button>
+            </div>
+            <p>Narxi: 2000 so'm</p>
+            <!-- delete btn -->
+            <div class="flex justify-end">
+                <button id="del-btn3" class="bg-red-500 text-white px-6 py-1">Delete</button>
+            </div>
+        </div>
+
+        
+    </div>
+
+    <div class="container container mx-auto px-5">
+         <p class="text-center text-[30px]">Jami : <span id="jami">0</span>  so'm</p>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>

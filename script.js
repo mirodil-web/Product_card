@@ -11,7 +11,9 @@ elIncreaseBtn.addEventListener('click', function(){
     elCounter.textContent = elCounter.textContent-1
         elPrice.textContent = elPrice.textContent-2000
         elJami.textContent = elJami.textContent-2000
-
+if(elJami.textContent <= 0){
+        elJami.textContent = 0
+    }
     if(elPrice.textContent <= 0){
         elPrice.textContent = 0
     }
@@ -29,6 +31,8 @@ elIncreaseBtn.addEventListener('click', function(){
 
     elDeleteBtn.addEventListener('click', function(){
         elHi.classList.add('hidden')
+         elJami.textContent = 0
+
     })
 
     // /2
@@ -45,7 +49,9 @@ elIncreaseBtn2.addEventListener('click', function(){
     elCounter2.textContent = elCounter2.textContent-1
         elPrice2.textContent = elPrice2.textContent-2000
         elJami.textContent = elJami.textContent-2000
-      
+      if(elJami.textContent <= 0){
+        elJami.textContent = 0
+    }
 
     if(elPrice2.textContent <= 0){
         elPrice2.textContent = 0
@@ -65,6 +71,8 @@ elIncreaseBtn2.addEventListener('click', function(){
 
     elDeleteBtn2.addEventListener('click', function(){
         elHi2.classList.add('hidden')
+         elJami.textContent = 0
+
     })
 
 // 3
@@ -81,7 +89,9 @@ elIncreaseBtn3.addEventListener('click', function(){
     elCounter3.textContent = elCounter3.textContent-1
         elPrice3.textContent = elPrice3.textContent-2000
         elJami.textContent = elJami.textContent-2000
-     
+     if(elJami.textContent <= 0){
+        elJami.textContent = 0
+    }
 
     if(elPrice3.textContent <= 0){
         elPrice3.textContent = 0
@@ -99,11 +109,12 @@ elIncreaseBtn3.addEventListener('click', function(){
 
     })
 
-    elDeleteBtn3.addEventListener('click', function(e){
+    elDeleteBtn3.addEventListener('click', function(){
         elHi3.classList.add('hidden')
-         elJami.textContent = elPrice3.textContent--
-         e.preventDefault()
+         elJami.textContent = 0
     })
+
+    
     
 
 
